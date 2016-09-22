@@ -1,0 +1,42 @@
+body {
+  background-image: url(../img/paper-background-5.jpg);
+  color: fff;
+  margin: 0;
+}
+
+h1 {
+	font-family: 'Coming Soon', cursive;
+	text-align: center;
+	color: gray;
+}
+
+#search input {
+	text-align: center;
+  display: inline-block;
+
+}
+
+button {
+  	font-family: 'Coming Soon', cursive;
+    border-radius: 5px;
+    height: 40px;
+    width: 10%;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+.container {
+  opacity: 0.5;
+  width: 40%;
+  font-family: 'Coming Soon', cursive;
+  color: white;
+}
+
+.container1 {
+  text-align: center;
+}
+
+#results {
+  font-family: 'Coming Soon', cursive;
+}
+
