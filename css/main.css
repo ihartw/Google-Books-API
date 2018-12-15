@@ -1,42 +1,87 @@
 body {
-  background-image: url(../img/paper-background-5.jpg);
-  color: fff;
-  margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-	font-family: 'Coming Soon', cursive;
 	text-align: center;
-	color: gray;
+	color: black;
+    margin: 30px;
+}
+
+h3 {
+  width: 50%;
+  margin: 20px auto;
+}
+
+img {
+  max-width: 110px;
+  max-height: 155px;
 }
 
 #search input {
 	text-align: center;
-  display: inline-block;
-
+    display: inline-block;
 }
 
 button {
-  	font-family: 'Coming Soon', cursive;
-    border-radius: 5px;
-    height: 40px;
-    width: 10%;
-    opacity: 0.6;
-    margin-top: 10px;
+  border-radius: 5px;
+  height: 40px;
+  width: 65px;
+  color: black;
+  margin-top: 10px;
+  display: inline-block;
+  height: 35px;
 }
 
+.form-control {
+  display: inline-block;
+  width: 250px;
+  margin: 0 auto;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container {
+    margin: 30px;
+}
 .container {
-  opacity: 0.5;
-  width: 40%;
-  font-family: 'Coming Soon', cursive;
   color: white;
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 30px;
 }
 
-.container1 {
-  text-align: center;
+.product_result {
+  height: 320px;
 }
 
 #results {
-  font-family: 'Coming Soon', cursive;
+  text-align: center;
 }
+
+.modal-body {
+    margin: 25px 0;
+}
+
+.loading {
+    display: none;
+    height: 0;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.loading img {
+    position: relative;
+    z-index: 50;
+    width: 100px;
+    bottom: 455%;
+    left: -5%;
+}
+
+
 

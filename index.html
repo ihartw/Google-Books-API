@@ -2,27 +2,57 @@
 <html>
 <!-- Head -->
 <head>
-	<title>Book Finder</title>
+	<title>Book Finder | Search for your favorite books</title>
+	<link rel="shortcut icon" href="img/heart.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 	<link rel="stylesheet" href="css/animate.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/main.css">
-
 </head>
+
 <!-- Body -->
 <body>
-	<h1>BOOK FINDER</h1>
-		<div class="container">
-  		<input type="text" class="form-control" placeholder="Title or Author" id="search">
-  		</div>
-  		<div class="container1">
-  		<button type="reset" id="button">SEARCH</button>
-  		</div>
-		<div id="results"></div>
 
-	<!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h2 class="modal-title" id="myModalLabel">Welcome to Book Search!</h2>
+				</div>
+				<div class="modal-body">
+					This is a basic tool used to search for book information. Simply enter a book title or authors name and view the results. I made this to mess around with the Google Books API.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Main Search -->
+	<div class="container">
+		<h1>BOOK FINDER</h1>
+		<div class="logo">
+			<img src="img/library.png">
+		</div>
+		<div class="form-container">
+			<input type="text" class="form-control" placeholder="Title or Author" id="search">
+			<button type="reset" id="button">SEARCH</button>
+			
+			<!-- Loading Wheel -->
+			<div class="loading">
+				<img src="img/loader.gif">
+			</div>
+		</div>
+	</div>
+
+	<!-- Search Results -->
+	<div id="results"></div>
+
+<!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
 
